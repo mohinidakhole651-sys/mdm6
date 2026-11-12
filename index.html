@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Grade Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="card">
+    <h1>Student Grade Calculator</h1>
+    <p class="sub">Enter marks out of 100 for each subject</p>
+
+    <form id="gradeForm" novalidate>
+      <label for="name">Student Name</label>
+      <input type="text" id="name" placeholder="Enter student name" />
+
+      <label for="m1">Web Fundamentals</label>
+      <input type="number" id="m1" min="0" max="100" placeholder="0 - 100" />
+
+      <label for="m2">Python Programming</label>
+      <input type="number" id="m2" min="0" max="100" placeholder="0 - 100" />
+
+      <label for="m3">Data Structures</label>
+      <input type="number" id="m3" min="0" max="100" placeholder="0 - 100" />
+
+      <label for="m4">Mathematics</label>
+      <input type="number" id="m4" min="0" max="100" placeholder="0 - 100" />
+
+      <label for="m5">Indian Constitution</label>
+      <input type="number" id="m5" min="0" max="100" placeholder="0 - 100" />
+
+      <div class="buttons">
+        <button type="submit" id="calcBtn">Calculate</button>
+        <button type="button" id="resetBtn" class="secondary">Reset</button>
+      </div>
+    </form>
+
+    <div id="result" class="result hidden"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
